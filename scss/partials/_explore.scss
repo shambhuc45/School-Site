@@ -1,0 +1,52 @@
+.section-explore {
+    margin-top: 5%;
+    height: 70vh;
+    width: 100%;
+    background-color: $color-primary-blue;
+
+    .explore-text {
+        align-items: center;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 0 20%;
+        top: 15%;
+        
+
+        .heading-secondary,
+        .explore-heading {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 5rem;
+            top: 10%;
+        }
+
+        .explore-des {
+            margin: 4rem 0;
+            color: #fff;
+            font-size: 2rem;
+            font-family: 'Times New Roman', sans-serif;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+}
+
+.btn-explore {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 2px solid $color-primary-yellow;
+    transition: all 0.7s;
+    
+
+    &:hover {
+        background-color: $color-primary-yellow;
+        clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
+        color: #000;
+        border: 2px solid $color-primary-yellow;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,63 @@
+.section-hero {
+    height: 95vh;
+    width: 100%;
+    animation-name: slider;
+    animation-duration: 25s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    // animation: 10s ease-in infinite reverse both running slider;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    background-position:top center;
+    background-size:cover;
+    transition: all 0.5s;
+
+
+    @keyframes slider {
+        0% {
+            background-image:url(./../../images/slide2.png);
+        }
+
+        33% {
+            background-image: url(./../../images/slide3.jpg);
+        }
+
+        66% {
+            background-image: url(./../../images/slide4.png);
+        }
+
+        100% {
+            background-image: url(./../../images/slide1.png);
+        }
+    }
+    .heading-primary{
+        text-transform: uppercase;
+        color: white;
+        font-size: 6rem;
+        font-weight: bold;
+        letter-spacing: -.2rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        line-height: 5rem;
+        cursor: pointer;
+        
+        &:hover{
+            color: $color-primary-yellow;
+        }
+    }
+    .btn-hero{
+        background-color: $color-primary-yellow;
+        padding: 2rem 4rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        letter-spacing: .25rem;
+        top: 95%;
+        right: 0%;
+        
+        a{
+            color: $color-primary-blue;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            padding-right: 1.5rem;
+            // font-weight: 600;
+        }
+    }
+}

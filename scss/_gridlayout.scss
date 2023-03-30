@@ -1,0 +1,35 @@
+.row{
+    max-width: 114rem;
+    padding: 0 2rem 0 1rem ;
+}
+.col-2{
+    float: left;
+    width: 50%;
+}
+.col-3{
+    float: left;
+    width: 33.33%;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px;
+
+
+    .nav-bar,.logo-section,
+    .top-bar {
+        border: 1px solid #fff;
+    }
+
+    .logo-section {
+        grid-area: 1/1/-1/2;
+    }
+
+    .top-bar {
+        grid-area: 1/2/2/-1;
+    }
+
+    .nav-bar {
+        grid-area: 2/2/-1/-1;
+    }
+}
