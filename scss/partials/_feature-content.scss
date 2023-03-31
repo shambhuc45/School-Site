@@ -1,0 +1,26 @@
+.heading-fc{
+    color: $color-primary-blue;
+    font-family: "Roboto Condensed" , sans-serif;
+}
+.feature-content{
+    height: 95vh;
+    width:85vw;
+    background-color: $color-secondary-green;
+    // margin-left:-10vh ;
+}
+.feature-image{
+    top: 20%;
+    right: -15%;
+    img{
+        height: 40rem;
+        
+    }
+}
+.heading-fc1{
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 4rem;
+}
+.feature-text{
+    width: 60%;
+}

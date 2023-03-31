@@ -1,34 +1,33 @@
 .section-explore {
     margin-top: 5%;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     background-color: $color-primary-blue;
 
     .explore-text {
-        align-items: center;
+        // align-items: center;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
         padding: 0 20%;
         top: 15%;
-        
 
-        .heading-secondary,
-        .explore-heading {
-            text-transform: uppercase;
-            color: #fff;
-            font-size: 5rem;
-            top: 10%;
-        }
+
 
         .explore-des {
             margin: 4rem 0;
             color: #fff;
             font-size: 2rem;
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Playfair Display', sans-serif;
             text-transform: capitalize;
-            font-weight: 600;
+            font-weight: 300;
         }
     }
+}
+.heading-secondary,
+.explore-heading {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 5rem;
 }
 
 .btn-explore {
@@ -40,7 +39,7 @@
     font-family: "Roboto Condensed", sans-serif;
     border: 2px solid $color-primary-yellow;
     transition: all 0.7s;
-    
+
 
     &:hover {
         background-color: $color-primary-yellow;
