@@ -1,0 +1,16 @@
+.heading-map{
+    color: $color-primary-blue;
+}
+
+.map{
+    margin: 30px auto;
+    border: 2px solid $color-primary-blue;
+    max-width: 100vw;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+.map-container{
+    padding: 0 4rem;
+}
