@@ -33,10 +33,10 @@
                     }
 
                     &:hover {
-                        color: $color-blue-light !important;
+                        color: $color-primary-light !important;
 
                         .iconify {
-                            color: $color-blue-light;
+                            color: $color-primary-light;
                         }
                     }
                 }
@@ -88,7 +88,7 @@
                 transition: all 0.4s;
 
                 &:hover {
-                    color: $color-blue-light;
+                    color: $color-primary-light;
                 }
             }
         }
