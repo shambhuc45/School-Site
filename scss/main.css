@@ -164,8 +164,7 @@ a {
 }
 .navigation .top-bar .btn-top:hover {
   background-color: #00274c;
-  -webkit-clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-          clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
 }
 .navigation .top-bar .top-icons {
   display: flex;
@@ -301,8 +300,7 @@ a {
 }
 .btn-explore:hover {
   background-color: #ffcb05;
-  -webkit-clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
-          clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
+  clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
   color: #000;
   border: 2px solid #ffcb05;
   font-weight: 300;
@@ -324,10 +322,8 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .section-features .cards-container {
   display: flex;
@@ -463,6 +459,7 @@ a {
 
 .heading-map {
   color: #00274c;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .map {
@@ -478,4 +475,4 @@ a {
 
 .map-container {
   padding: 0 4rem;
-}/*# sourceMappingURL=main.css.map */
+}
