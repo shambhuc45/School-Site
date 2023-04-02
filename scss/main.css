@@ -531,7 +531,8 @@ a {
 
 .section-reviews {
   background-color: #00274c;
-  height: 90vh;
+  min-height: 90vh;
+  max-height: 120vh;
 }
 
 .reviews-container .reviews {
