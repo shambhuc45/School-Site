@@ -65,7 +65,7 @@ $COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
                 font-size: 1.2rem;
                 font-weight: 600;
                 line-height: 4rem;
-                color: #000000;
+                color: $color-black;
                 display: flex;
                 align-items: center;
                 padding: 0 2rem;
@@ -73,13 +73,13 @@ $COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
 
 
                 &:hover {
-                    color: #ffffff;
+                    color: $color-white;
                 }
             }
 
             &:hover {
                 background-color: $color-primary-blue;
-                clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+                clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
             }
         }
 
@@ -126,7 +126,7 @@ $COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
                 }
 
                 &:hover {
-                    border-bottom: 0.45rem solid #ffffff;
+                    border-bottom: 0.45rem solid $color-white;
                    
                 }
                 
