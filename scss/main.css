@@ -326,8 +326,10 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .section-features .cards-container {
   display: flex;
@@ -463,7 +465,6 @@ a {
 
 .heading-map {
   color: #00274c;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .map {
