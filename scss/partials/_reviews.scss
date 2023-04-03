@@ -1,6 +1,7 @@
 .section-reviews {
     background-color: $color-primary-blue;
-    height: 90vh;
+    min-height: 90vh;
+    max-height: 120vh;
 }
 
 .reviews-container {
