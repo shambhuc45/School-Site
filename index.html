@@ -7,11 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intern</title>
     <link rel="stylesheet" href="./scss/main.css">
-     <!--Iconify Script -->
-     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
- <!-- Link Swiper's CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
 </head>
 
 <body>
@@ -20,6 +15,12 @@
         <!-- Header Start -->
         <header> <!-- Navigation Start -->
             <nav class="navigation">
+                <input type="checkbox" name="nav-check" id="nav-check">
+                <label for="nav-check" class="nav-btn">
+                    <span class="nav-icon">
+                        &nbsp;
+                    </span>
+                </label>
                 <div class="nav-bg">&nbsp;</div>
                 <div class="logo-section">
                     <img src="./images/logo.png" alt="Logo Loading..." class="logo-img" height="80px">
@@ -431,82 +432,32 @@
                         <div class="image-content">
                             <span class="overlay"></span>
 
-                            <div class="card-picture">
-                                <img src="./images/card0.jpg" alt="" class="card-pic">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Shambhu</h2>
-                            <p class="description">The lorem the text section that contains header with
-                                 having open functionality.Lorem dolor sit amet consectetur adipisicing elit</p>
-                                 <button class="button btn-explore">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-picture">
-                                <img src="./images/card0.jpg" alt="" class="card-pic">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Shambhu</h2>
-                            <p class="description">The lorem the text section that contains header with
-                                 having open functionality.Lorem dolor sit amet consectetur adipisicing elit</p>
-                                 <button class="button btn-explore">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-picture">
-                                <img src="./images/card0.jpg" alt="" class="card-pic">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Shambhu</h2>
-                            <p class="description">The lorem the text section that contains header with
-                                 having open functionality.Lorem dolor sit amet consectetur adipisicing elit</p>
-                                 <button class="button btn-explore">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-picture">
-                                <img src="./images/card0.jpg" alt="" class="card-pic">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Shambhu</h2>
-                            <p class="description">The lorem the text section that contains header with
-                                 having open functionality.Lorem dolor sit amet consectetur adipisicing elit</p>
-                                 <button class="button btn-explore">View More</button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-picture">
-                                <img src="./images/card0.jpg" alt="" class="card-pic">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Shambhu</h2>
-                            <p class="description">The lorem the text section that contains header with
-                                 having open functionality.Lorem dolor sit amet consectetur adipisicing elit</p>
-                                 <button class="button btn-explore">View More</button>
-                        </div>
-                    </div>
+    <!-- Review Section  -->
+    <section class="section-reviews margin-top-large">
+        <div class="text-center">
+            <h1 class="heading-reviews heading-secondary">
+                Best Reviews
+            </h1>
+        </div>
+        <div class="reviews-container">
+            <div class="reviews">
+                <figure class="review-shape">
+                    <img src="./images/reviewpic.png" alt="">
+                </figure>
+                <div class="review-text">
+                    <h1 class="heading-review margin-bottom-small">I choose the best school for my kid</h1>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iusto itaque deleniti tempore
+                        nulla fugiat unde aspernatur sit autem. Minus?"</p>
+                </div>
+            </div>
+            <div class="reviews"> 
+                <figure class="review-shape">
+                    <img src="./images/reviewpic.png" alt="">
+                </figure>
+                <div class="review-text">
+                    <h1 class="heading-review margin-bottom-small">I choose the best school for my kid</h1>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iusto itaque deleniti tempore
+                        nulla fugiat unde aspernatur sit autem. Minus?"</p>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -527,6 +478,8 @@
 
    
 
+
+    <script type="text/javascript" src="./javascript/nav.js"></script>
 
 
 </body>
