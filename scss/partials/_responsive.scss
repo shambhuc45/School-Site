@@ -1,0 +1,42 @@
+// Nav Responsive 
+.nav-icon {
+    position: relative;
+    // margin-top: 3.7rem;
+    cursor: pointer;
+
+    &,
+    &::before,
+    &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-white;
+        display: inline-block;
+
+        &>*:hover{
+            left: 0;
+        }
+    }
+
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: -.5rem;
+        transition: all 0.5s;
+    }
+
+    &::before {
+        top: -0.8rem;
+    }
+
+    &::after {
+        bottom: -0.8rem;
+    }
+}
+.nav-btn{
+    cursor: pointer;
+}
+@media (max-width:915px){
+    
+}

@@ -1,37 +1,34 @@
 .testimonials{
     font-family: "Roboto Condensed", sans-serif;
-    min-height: 100vh;
+    min-height: 80vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-secondary-softpurple;
+    background-color: $color-primary-blue;
 }
 .heading-testimonial{
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 10vh;
     color: $color-primary-blue;
     text-align: center;
 }
 .slide-container{
     max-width: 1120px;
     width: 100%;
-    background-color: grey;
-    padding: 40px 0;
 }
 .silde-content{
-    margin: 0 40px;
+    margin: 0 2rem;
 }
 
 .card{
-    width: 320px;
-    border-radius: 25px;
-    background-color: $color-secondary-white;
+    width: 32rem;
+    border-radius: 2.5rem;
+    background-color: $color-primary-yellow;
     .image-content,
 .card-content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px 14px;
     }
 .image-content{
     row-gap: 5px;
@@ -42,7 +39,7 @@
         height: 150px;
         width: 150px;
         border-radius: 50%;
-        background: $color-secondary-white;
+        background: $color-white;
         padding: 3px;
         .card-pic{
             height: 100%;
@@ -59,22 +56,22 @@
         height: 100%;
         width: 100%;
         background-color:  $color-primary-light;
-        border-radius: 25px 25px 0 25px;
-        &::before,
-        &::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: -40px;
-            height: 40px;
-            width: 40px;
-            background-color: $color-primary-light;
-        }
-        &::after{
-            border-radius: 0 25px 0 0;
-            background-color: $color-secondary-white;
+        border-radius: 2.5rem;
+        // &::before,
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     right: 0;
+        //     bottom: -40px;
+        //     height: 40px;
+        //     width: 40px;
+        //     background-color: $color-primary-light;
+        // }
+        // &::after{
+        //     border-radius: 0 25px 0 0;
+        //     background-color: $color-white;
 
-        }
+        // }
     }
     
 }
@@ -93,4 +90,8 @@
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    &:hover{
+        background-color: $color-primary-blue;
+        color: $color-white;
+    }
 }
