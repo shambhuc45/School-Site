@@ -605,10 +605,30 @@ a {
 
 .nav-icon {
   position: relative;
+  cursor: pointer;
 }
 .nav-icon, .nav-icon::before, .nav-icon::after {
   width: 3rem;
   height: 2px;
   background-color: #fff;
   display: inline-block;
+}
+.nav-icon > *:hover, .nav-icon::before > *:hover, .nav-icon::after > *:hover {
+  left: 0;
+}
+.nav-icon::before, .nav-icon::after {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  transition: all 0.5s;
+}
+.nav-icon::before {
+  top: -0.8rem;
+}
+.nav-icon::after {
+  bottom: -0.8rem;
+}
+
+.nav-btn {
+  cursor: pointer;
 }
