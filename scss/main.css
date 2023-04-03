@@ -208,31 +208,35 @@ a {
   font-weight: 600;
 }
 .navigation .nav-bar .nav-list .nav-items:hover {
-  border-bottom: 0.45rem solid #ffffff;
+  border-bottom: 0.45rem solid #fff;
 }
 .navigation .nav-bar .nav-list .sub-menu {
   position: absolute;
-  width: 200px;
-  background-color: #FDA085;
+  min-width: fit-content;
+  background-color: #00274c;
   box-shadow: 0 20px 45px black;
-  top: 100px;
+  top: 10rem;
   overflow: hidden;
   opacity: 0;
   z-index: -999;
   transition: all ease 0.5s;
 }
 .navigation .nav-bar .nav-list .sub-menu a {
-  font-size: 1rem;
-  margin-left: 2rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 0 2rem;
 }
 .navigation .nav-bar .nav-list .sub-menu li:hover {
-  background-color: #F6D365;
+  background-color: #ffcb05;
+}
+.navigation .nav-bar .nav-list .sub-menu li:hover a {
+  color: #000;
 }
 .navigation .nav-bar .nav-list .dropdown:hover .sub-menu {
   z-index: 99;
-  opacity: 1;
-  margin-top: 0;
-  display: block;
+  opacity: 0.9;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .section-hero {
@@ -350,10 +354,8 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .section-features .cards-container {
   display: flex;

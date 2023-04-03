@@ -1,10 +1,15 @@
-$WHITE:#FBFBFB;
-$BACKGROUND:#45494E;
-$COLOR1:#FDA085;$COLOR1g:#F6D365;
-$COLOR2:#BFF098;$COLOR2g:#6FD6FF;
-$COLOR3:#EA8D8D;$COLOR3g:#A890FE;
-$COLOR4:#D8B5FF;$COLOR4g:#1EAE98;
-$COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
+$WHITE: #FBFBFB;
+$BACKGROUND: #45494E;
+$COLOR1: #FDA085;
+$COLOR1g: #F6D365;
+$COLOR2: #BFF098;
+$COLOR2g: #6FD6FF;
+$COLOR3: #EA8D8D;
+$COLOR3g: #A890FE;
+$COLOR4: #D8B5FF;
+$COLOR4g: #1EAE98;
+$COLOR5: #C6EA8D;
+$COLOR5g: #FE90AF;
 
 
 .navigation {
@@ -112,7 +117,7 @@ $COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
             display: flex;
             justify-content: flex-end;
             gap: 4rem;
-            
+
 
             .nav-items {
                 line-height: 4.3rem;
@@ -127,42 +132,47 @@ $COLOR5:#C6EA8D;$COLOR5g:#FE90AF;
 
                 &:hover {
                     border-bottom: 0.45rem solid $color-white;
-                   
+
                 }
-                
+
 
             }
 
-            .sub-menu{
+            .sub-menu {
                 position: absolute;
-                width: 200px;
-                background-color: $COLOR1;
-                box-shadow: 0 20px 45px black ;
+                min-width: fit-content;
+                background-color: $color-primary-blue;
+                box-shadow: 0 20px 45px black;
                 // margin-top: -50px;
-                top:100px;
+                top: 10rem;
                 overflow: hidden;
                 opacity: 0;
                 z-index: -999;
                 transition: all ease 0.5s;
+                a {
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    padding: 0 2rem;
+                }
 
-                a{
-                    font-size:1rem;
-                    margin-left: 2rem;
-                  }
+                li:hover {
+                    background-color: $color-primary-yellow;
 
-                  li:hover {background-color: $COLOR1g;}
+                    a {
+                        color: $color-black;
+                    }
+                }
 
             }
 
-                .dropdown:hover .sub-menu {
-                    z-index: 99;
-                    opacity: 1;
-                    margin-top: 0;
-                    display: block;
-                }
+            .dropdown:hover .sub-menu {
+                z-index: 99;
+                opacity: 0.9;
+                display: flex;
+                flex-wrap: wrap;
+            }
 
 
         }
     }
 }
-
