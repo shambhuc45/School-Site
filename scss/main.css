@@ -169,7 +169,8 @@ a {
 }
 .navigation .top-bar .btn-top:hover {
   background-color: #00274c;
-  clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
+          clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
 }
 .navigation .top-bar .top-icons {
   display: flex;
@@ -212,6 +213,7 @@ a {
 }
 .navigation .nav-bar .nav-list .sub-menu {
   position: absolute;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   background-color: #00274c;
   box-shadow: 0 20px 45px black;
@@ -245,8 +247,10 @@ a {
   animation: slider 25s ease-in-out 0s infinite forwards;
   background-position: top center;
   background-size: cover;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: all 0.5s;
 }
 @keyframes slider {
@@ -332,7 +336,8 @@ a {
 }
 .btn-explore:hover {
   background-color: #ffcb05;
-  clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
+          clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
   color: #000;
   border: 2px solid #ffcb05;
   font-weight: 300;
@@ -354,8 +359,10 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .section-features .cards-container {
   display: flex;
@@ -508,6 +515,189 @@ a {
   padding: 0 4rem;
 }
 
+.testimonials {
+  font-family: "Roboto Condensed", sans-serif;
+  min-height: 80vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00274c;
+}
+
+.heading-testimonial {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #00274c;
+  text-align: center;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+}
+
+.silde-content {
+  margin: 0 2rem;
+}
+
+.card {
+  width: 32rem;
+  border-radius: 2.5rem;
+  background-color: #ffcb05;
+}
+.card .image-content,
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .image-content {
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+}
+.card .image-content .card-picture {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card .image-content .card-picture .card-pic {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #017EA7;
+}
+.card .image-content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #017EA7;
+  border-radius: 2.5rem;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.button {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #00274c;
+  color: #fff;
+}
+
+.footer {
+  max-height: 70vh;
+  background-color: #11161d;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 10rem;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1320px;
+}
+.footer-container .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-container .footer-wrapper .footer-widget {
+  width: calc(20% - 30px);
+  margin: 0 15px 50px;
+  padding: 0 12px;
+}
+.footer-container .footer-wrapper .footer-widget .footer-logo {
+  height: 10rem;
+  width: auto;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-left: 6rem;
+}
+.footer-container .footer-wrapper .footer-widget .socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-container .footer-wrapper .footer-widget .socials li {
+  list-style: none;
+}
+.footer-container .footer-wrapper .footer-widget .socials li a {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3 ease;
+}
+.footer-container .footer-wrapper .footer-widget .socials li a:hover {
+  background-color: #017EA7;
+}
+.footer-container .footer-wrapper .footer-widget .footer-h1 {
+  color: #fff;
+  margin: 10px 0 35px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.footer-container .footer-wrapper .footer-widget li {
+  list-style: none;
+}
+.footer-container .footer-wrapper .footer-widget li a {
+  color: #fff;
+  font-size: 1.9rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 32px;
+  transition: all 0.3s ease-out;
+}
+.footer-container .footer-wrapper .footer-widget li a:hover {
+  color: #ffcb05;
+}
+.footer-container .copyright-wrapper {
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+}
+.footer-container .copyright-wrapper p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-container .copyright-wrapper p a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3 ease-out;
+}
+.footer-container .copyright-wrapper p a:hover {
+  color: #ffcb05;
+}
+
 .heading-blog {
   text-align: center;
   background-color: #00274c;
@@ -535,8 +725,10 @@ a {
   text-align: center;
   margin: 0 auto;
   display: block;
-  object-fit: cover;
-  object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .blogs .blog-text {
   color: #00274c;
@@ -580,11 +772,14 @@ a {
   float: left;
   line-height: 15rem;
   background-color: aqua;
-  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 .reviews-container .reviews .review-shape img {
-  object-fit: cover;
-  object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
   width: 100%;
 }
 .reviews-container .reviews .review-text {
@@ -631,4 +826,4 @@ a {
 
 .nav-btn {
   cursor: pointer;
-}
+}/*# sourceMappingURL=main.css.map */
