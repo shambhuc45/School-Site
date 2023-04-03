@@ -6,16 +6,26 @@
     text-decoration: none;
     list-style: none;
 }
-
+$color-primary-blue: #00274c;
+$color-primary-yellow: #ffcb05;
+$color-primary-light:#017EA7;
+$color-secondary-green:#597E20;
+$color-secondary-purple:#5A2049;
+$color-secondary-red:#D9002A;
+$color-overlay-light: #06b1e1b6;
+$color-overlay-dark: #1c5f70c0;
+$color-white:#fff;
+$color-black:#000;
+$color-blog-bg:#f2f2f2;
 html {
     font-size: 62.5%;
     font-family: 'Open Sans' , sans-serif;
 }
 body{
-    background-color: #ffffff;
+    background-color: $color-white;
 }
 a {
-    color: white;
+    color: $color-white;
 }
 
 $color-primary-blue: #00274c;

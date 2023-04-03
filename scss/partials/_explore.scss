@@ -15,7 +15,7 @@
 
         .explore-des {
             margin: 4rem 0;
-            color: #fff;
+            color: $color-white;
             font-size: 2rem;
             font-family: 'Playfair Display', sans-serif;
             text-transform: capitalize;
@@ -26,8 +26,9 @@
 .heading-secondary,
 .explore-heading {
     text-transform: uppercase;
-    color: #fff;
+    color: $color-white;
     font-size: 5rem;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .btn-explore {
@@ -43,8 +44,8 @@
 
     &:hover {
         background-color: $color-primary-yellow;
-        clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
-        color: #000;
+        clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
+        color: $color-black;
         border: 2px solid $color-primary-yellow;
         font-weight: 300;
     }

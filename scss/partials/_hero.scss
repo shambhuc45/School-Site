@@ -1,15 +1,18 @@
 .section-hero {
     height: 95vh;
     width: 100%;
-    animation-name: slider;
-    animation-duration: 25s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
+    // animation-name: slider;
+    // animation-duration: 25s;
+    // animation-timing-function: ease-in;
+    // animation-iteration-count: infinite;
+    // animation-direction: reverse;
     // animation: 10s ease-in infinite reverse both running slider;
     // animation: name duration timing-function delay iteration-count direction fill-mode;
-    background-position:top center;
-    background-size:cover;
+    animation: slider 25s ease-in-out 0s infinite forwards;
+    background-position: top center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
     transition: all 0.5s;
 
 
@@ -30,7 +33,8 @@
             background-image: url(./../../images/slide1.png);
         }
     }
-    .heading-primary{
+
+    .heading-primary {
         text-transform: uppercase;
         color: white;
         font-size: 6rem;
@@ -39,20 +43,21 @@
         font-family: 'Roboto Condensed', sans-serif;
         line-height: 5rem;
         cursor: pointer;
-        
-        &:hover{
+
+        &:hover {
             color: $color-primary-yellow;
         }
     }
-    .btn-hero{
+
+    .btn-hero {
         background-color: $color-primary-yellow;
         padding: 2rem 4rem;
         font-family: 'Roboto Condensed', sans-serif;
         letter-spacing: .25rem;
         top: 95%;
         right: 0%;
-        
-        a{
+
+        a {
             color: $color-primary-blue;
             text-transform: uppercase;
             font-size: 1.2rem;
