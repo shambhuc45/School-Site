@@ -579,4 +579,98 @@ a {
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.footer {
+  max-height: 70vh;
+  background-color: #11161d;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 10rem;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1320px;
+}
+.footer-container .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-container .footer-wrapper .footer-widget {
+  width: calc(20% - 30px);
+  margin: 0 15px 50px;
+  padding: 0 12px;
+}
+.footer-container .footer-wrapper .footer-widget .footer-logo {
+  height: 10rem;
+  width: auto;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-left: 6rem;
+}
+.footer-container .footer-wrapper .footer-widget .socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-container .footer-wrapper .footer-widget .socials li {
+  list-style: none;
+}
+.footer-container .footer-wrapper .footer-widget .socials li a {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3 ease;
+}
+.footer-container .footer-wrapper .footer-widget .socials li a:hover {
+  background-color: #017EA7;
+}
+.footer-container .footer-wrapper .footer-widget .footer-h1 {
+  color: #fff;
+  margin: 10px 0 35px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.footer-container .footer-wrapper .footer-widget li {
+  list-style: none;
+}
+.footer-container .footer-wrapper .footer-widget li a {
+  color: #fff;
+  font-size: 1.9rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 32px;
+  transition: all 0.3s ease-out;
+}
+.footer-container .footer-wrapper .footer-widget li a:hover {
+  color: #ffcb05;
+}
+.footer-container .copyright-wrapper {
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+}
+.footer-container .copyright-wrapper p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-container .copyright-wrapper p a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3 ease-out;
+}
+.footer-container .copyright-wrapper p a:hover {
+  color: #ffcb05;
 }/*# sourceMappingURL=main.css.map */
