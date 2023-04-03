@@ -1,0 +1,96 @@
+.testimonials{
+    font-family: "Roboto Condensed", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-secondary-softpurple;
+}
+.heading-testimonial{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 10vh;
+    color: $color-primary-blue;
+    text-align: center;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px 0;
+}
+.silde-content{
+    margin: 0 40px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: $color-secondary-white;
+    .image-content,
+.card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+    }
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+    .card-picture{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: $color-secondary-white;
+        padding: 3px;
+        .card-pic{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid $color-primary-light;
+        }
+    }
+    .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color:  $color-primary-light;
+        border-radius: 25px 25px 0 25px;
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: $color-primary-light;
+        }
+        &::after{
+            border-radius: 0 25px 0 0;
+            background-color: $color-secondary-white;
+
+        }
+    }
+    
+}
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.description{
+    font-size: 14px;
+    text-align: center;
+}
+.button{
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
