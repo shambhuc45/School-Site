@@ -602,3 +602,13 @@ a {
 .reviews-container .reviews .review-text p {
   font-style: italic;
 }
+
+.nav-icon {
+  position: relative;
+}
+.nav-icon, .nav-icon::before, .nav-icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
