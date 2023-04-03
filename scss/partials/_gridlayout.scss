@@ -1,6 +1,6 @@
 .row{
     // max-width: 114rem;
-    padding: 0 1rem 0 1rem ;
+    padding: 0 1rem ;
 }
 .col-2{
     float: left;
@@ -9,6 +9,10 @@
 .col-3{
     float: left;
     width: 33.33%;
+}
+.col-4{
+    float: left;
+    width: 20%;
 }
 .navigation {
     display: grid;
@@ -20,11 +24,9 @@
     .top-bar {
         border: 1px solid #fff;
     }
-
     .logo-section {
         grid-area: 1/1/-1/2;
     }
-
     .top-bar {
         grid-area: 1/2/2/-1;
     }

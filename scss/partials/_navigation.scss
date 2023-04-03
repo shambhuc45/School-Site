@@ -1,3 +1,17 @@
+$WHITE: #FBFBFB;
+$BACKGROUND: #45494E;
+$COLOR1: #FDA085;
+$COLOR1g: #F6D365;
+$COLOR2: #BFF098;
+$COLOR2g: #6FD6FF;
+$COLOR3: #EA8D8D;
+$COLOR3g: #A890FE;
+$COLOR4: #D8B5FF;
+$COLOR4g: #1EAE98;
+$COLOR5: #C6EA8D;
+$COLOR5g: #FE90AF;
+
+
 .navigation {
     background-color: rgba(0, 0, 0, 0.65);
     color: transparent;
@@ -56,7 +70,7 @@
                 font-size: 1.2rem;
                 font-weight: 600;
                 line-height: 4rem;
-                color: #000000;
+                color: $color-black;
                 display: flex;
                 align-items: center;
                 padding: 0 2rem;
@@ -64,13 +78,13 @@
 
 
                 &:hover {
-                    color: #ffffff;
+                    color: $color-white;
                 }
             }
 
             &:hover {
                 background-color: $color-primary-blue;
-                clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+                clip-path: polygon(0 0, 89% 0, 100% 50%, 89% 100%, 0 100%);
             }
         }
 
@@ -103,9 +117,9 @@
             display: flex;
             justify-content: flex-end;
             gap: 4rem;
-            
 
-            li {
+
+            .nav-items {
                 line-height: 4.3rem;
                 transition: all 0.4s;
 
@@ -114,19 +128,51 @@
                     text-transform: uppercase;
                     font-size: 1.5rem;
                     font-weight: 600;
-
                 }
 
                 &:hover {
-                    border-bottom: 0.45rem solid #ffffff;
-                   
-                }
-                
+                    border-bottom: 0.45rem solid $color-white;
 
+                }
+
+
+            }
+
+            .sub-menu {
+                position: absolute;
+                min-width: fit-content;
+                background-color: $color-primary-blue;
+                box-shadow: 0 20px 45px black;
+                // margin-top: -50px;
+                top: 10rem;
+                overflow: hidden;
+                opacity: 0;
+                z-index: -999;
+                transition: all ease 0.5s;
+                a {
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    padding: 0 2rem;
+                }
+
+                li:hover {
+                    background-color: $color-primary-yellow;
+
+                    a {
+                        color: $color-black;
+                    }
+                }
+
+            }
+
+            .dropdown:hover .sub-menu {
+                z-index: 99;
+                opacity: 0.9;
+                display: flex;
+                flex-wrap: wrap;
             }
 
 
         }
     }
 }
-
