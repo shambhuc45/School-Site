@@ -17,9 +17,22 @@ $color-overlay-dark: #1c5f70c0;
 $color-white:#fff;
 $color-black:#000;
 $color-blog-bg:#f2f2f2;
+$color-secondary-dark: #11161d;
+
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px =1rem // 10/16*100%
     font-family: 'Open Sans' , sans-serif;
+
+    @include respond(tab-land){
+        font-size:56.25%; // 9px = 1rem // 9/16*100%
+    }
+    @include respond(tab-port){
+        font-size:50%; // 8px = 1rem // 8/16*100%
+    }
+    @include respond(phone){
+        font-size:31.25%; // 9px = 1rem // 7/16*100%
+    }
+    
 }
 body{
     background-color: $color-white;
@@ -27,18 +40,6 @@ body{
 a {
     color: $color-white;
 }
-
-$color-primary-blue: #00274c;
-$color-primary-yellow: #ffcb05;
-$color-primary-light:#017EA7;
-$color-secondary-green:#597E20;
-$color-secondary-purple:#5A2049;
-$color-secondary-red:#D9002A;
-$color-secondary-white:#fff;
-$color-secondary-dark: #11161d;
-$color-secondary-softpurple:#b68e8e;
-
-
 .absolute {
     position: absolute;
 }

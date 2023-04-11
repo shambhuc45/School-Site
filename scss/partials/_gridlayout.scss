@@ -5,6 +5,7 @@
 .col-2{
     float: left;
     width: 50%;
+
 }
 .col-3{
     float: left;
@@ -17,8 +18,7 @@
 .navigation {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 50px;
-
+    grid-template-rows: 5rem 5rem;
 
     .nav-bar,.logo-section,
     .top-bar {
@@ -34,19 +34,4 @@
     .nav-bar {
         grid-area: 2/2/-1/-1;
     }
-}
-@media (max-width:992px){
-    .navigation{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 8rem;
-        .top-bar *{
-            display: none;
-        }
-        .nav-bar{
-            display: none;
-        }
-        
-    }
-    
 }

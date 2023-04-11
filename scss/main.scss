@@ -1,6 +1,8 @@
-@import "./partials/gridlayout";
+@import "./partials/mixins";
 @import "./partials/variables";
+@import "./partials/gridlayout";
 @import "./partials/navigation";
+@import "./partials/responsive";
 @import "./partials/hero";
 @import "./partials/explore";
 @import "./partials/cards";
@@ -10,5 +12,3 @@
 @import "./partials/footer";
 @import "./partials/blog";
 @import "./partials/reviews";
-@import "./partials/responsive";
-

@@ -15,13 +15,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         .footer-widget{
-            width: calc(20% - 30px);
-            margin: 0 15px 50px;
+            width: calc(20% - 3rem);
+            margin: 0 1.5rem 5rem;
             padding: 0 12px;
             .footer-logo{
                 height: 10rem;
                 width: auto;
-                margin-bottom: 30px;
+                margin-bottom: 3rem;
                 vertical-align: middle;
                 margin-left: 6rem;
             }
@@ -32,12 +32,12 @@
                 li{
                     list-style: none;
                     a{
-                        width: 44px;
-                        height: 44px;
+                        width: 4.5rem;
+                        height: 4.5rem;
                         margin-right: 10px;
-                        background-color: $color-secondary-white;
+                        background-color: $color-white;
                         border-radius: 50%;
-                        font-size: 20px;
+                        font-size: 2rem;
                         text-decoration: none;
                         display: flex;
                         align-items: center;
@@ -50,19 +50,19 @@
                 }
             }
             .footer-h1{
-                color: $color-secondary-white;
-                margin: 10px 0 35px;
+                color: $color-white;
+                margin: 1rem 0 3.5rem;
                 font-size: 2.5rem;
                 font-weight: 600;
             }
                 li{
                     list-style: none;
                     a{
-                        color: $color-secondary-white;
+                        color: $color-white;
                         font-size: 1.9rem;
                         text-decoration: none;
                         text-transform: capitalize;
-                        line-height: 32px;
+                        line-height: 3.2rem;
                         transition: all 0.3s ease-out;
                         &:hover{
                             color: $color-primary-yellow;
@@ -73,9 +73,9 @@
     }
     .copyright-wrapper{
         padding: 20px 0;
-        border-top: 1px solid $color-secondary-white;
+        border-top: 1px solid $color-white;
         p{
-            color: $color-secondary-white;
+            color: $color-white;
             font-size: 1.6rem;
             font-weight: 500;
             text-align: center;
