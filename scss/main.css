@@ -501,20 +501,25 @@ a {
     font-size: 2.5rem;
   }
   .feature-content {
-    height: 50vh;
+    margin-top: 120px;
+    height: 65vh;
     width: 100%;
     max-width: auto;
   }
   .feature-content .feature-text {
     margin-left: 40px;
+    margin-top: 170px;
+  }
+  .col-2 {
+    float: none;
+    width: 100%;
   }
   .feature-image {
-    display: none;
-    top: -40%;
+    top: -30%;
     right: 0%;
   }
   .feature-image img {
-    height: 35rem;
+    height: 30rem;
     width: 100%;
     max-width: 100%;
   }
@@ -538,13 +543,24 @@ a {
     margin-left: 1rem;
   }
   .feature-content1 {
-    height: 51vh;
-    width: 100%;
     margin-left: 0;
-    background-position: none;
+    margin-top: 120px;
+    height: 65vh;
+    width: 100%;
+    max-width: auto;
+  }
+  .feature-content1 .feature-image {
+    position: absolute;
+    margin-top: 6px;
+  }
+  .feature-content1 .feature-image img {
+    height: 30rem;
+    width: 100%;
+    max-width: 100%;
   }
   .feature-content1 .feature-text {
     margin-left: 40px;
+    margin-top: 170px;
   }
   .feature-content-inside {
     margin-top: 8%;
