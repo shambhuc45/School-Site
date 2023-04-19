@@ -34,6 +34,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 3rem;
+            
 
             li {
                 a {
@@ -58,6 +59,20 @@
                             color: $color-primary-light;
                         }
                     }
+                }
+                @include respond(tab-port) {
+                    position: fixed;
+                    display: inline-block;
+                    height: 100vh;
+                    width: 100%;
+                    background-color: $color-primary-blue;
+                    text-align: center;
+                    // top: 70px;
+                    transition: all .5s;
+                    z-index: 1111111;
+    
+                    left: 200%;
+                    // border-bottom: 1px solid $color-white;
                 }
             }
         }
@@ -135,6 +150,10 @@
                 z-index: 10000;
 
                 left: 200%;
+                // border-bottom: 1px solid $color-white;
+            }
+            .last-item{
+                border-bottom: 1px solid $color-white;
             }
 
             .nav-items {
@@ -156,10 +175,11 @@
                     border-bottom: 0.45rem solid $color-white;
 
 
-                    @include respond(tab-port){
-                        border: 0;
-                    }
+                    // @include respond(tab-port){
+                    //     border: 0;
+                    // }
                 }
+                
 
 
             }
@@ -203,7 +223,7 @@
 
                 @include respond(tab-port){
                     display: inline-block;
-                    right: 15%;
+                    right: 10%;
                 }
             }
 

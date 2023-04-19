@@ -4,6 +4,9 @@
     width: 100%;
     background-color: $color-primary-blue;
 
+    @include respond(tab-port){
+        height: 80rem;
+    }
     .explore-text {
         // align-items: center;
         text-align: center;

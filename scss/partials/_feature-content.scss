@@ -4,14 +4,16 @@
 }
 
 .feature-content {
-    height: 95vh;
+    min-height: 95vh;
     width: 85%;
+    max-height:110vh ;
     
     // margin-left:-10vh ;
     font-family: "Roboto Condensed", sans-serif;
     color: $color-white;
     text-transform: uppercase;
 
+    
     &:nth-child(1){
         background-color: $color-secondary-green;
     }
@@ -21,15 +23,21 @@
     &:nth-child(5){
         background-color: $color-secondary-red;
     }
+
+    
 }
 
 .feature-image {
     top: 20%;
     right: -15%;
 
+    @include respond(tab-port){
+        bottom: 0;
+    }
     img {
         height: 40rem;
 
+        
     }
 }
 
@@ -40,7 +48,12 @@
 }
 
 .feature-text {
-    width: 60%;
+    width: 50%;
+
+    @include respond(tab-port){
+        width: 100%;
+        top: 0;
+    }
 }
 
 .feature-stats {
@@ -94,8 +107,17 @@
 
         }
 
+        @include respond(tab-port){
+            margin: 0;
+        }
+
     }
     .feature-content-inside{
         margin-top: 8%;
+    }
+
+    @include respond(tab-port){
+        width: 100%;
+        margin: 0;
     }
 }

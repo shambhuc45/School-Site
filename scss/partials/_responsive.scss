@@ -15,5 +15,12 @@
         #nav-check:checked ~ .nav-bar>.nav-list{
             left: 0;
         }
+        #nav-check:checked ~ .top-bar>li{
+            left: 0;
+        }
+        .nav-bar .nav-list .nav-items:not(:last-child):hover{
+            border: 0;
+        }
     }
+
 }

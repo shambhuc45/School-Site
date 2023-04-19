@@ -1,9 +1,13 @@
 .section-features {
     width: 100%;
-    height: 150%;
+    // height: 150%;
     gap: 3rem;
     padding: 0 6rem;
-    margin-top: -20vh;
+    margin-top: -15vh;
+
+    @include respond(tab-port){
+        padding: 0 4rem;
+    }
 
     a {
         color: $color-white;
