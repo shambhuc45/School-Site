@@ -576,7 +576,7 @@ a {
 .feature-content {
   min-height: 95vh;
   width: 85%;
-  max-height: 110vh;
+  max-height: fit-content;
   font-family: "Roboto Condensed", sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -590,6 +590,11 @@ a {
 .feature-content:nth-child(5) {
   background-color: #D9002A;
 }
+@media (max-width: 56.25em) {
+  .feature-content {
+    width: 100%;
+  }
+}
 
 .feature-image {
   top: 20%;
@@ -597,11 +602,19 @@ a {
 }
 @media (max-width: 56.25em) {
   .feature-image {
-    bottom: 0;
+    right: 0;
+    top: 0;
   }
 }
 .feature-image img {
   height: 40rem;
+}
+@media (max-width: 56.25em) {
+  .feature-image img {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+  }
 }
 
 .heading-fc1 {
@@ -616,7 +629,7 @@ a {
 @media (max-width: 56.25em) {
   .feature-text {
     width: 100%;
-    top: 0;
+    padding: 50rem;
   }
 }
 
